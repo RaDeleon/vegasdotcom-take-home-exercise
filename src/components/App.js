@@ -17,13 +17,41 @@ class App extends React.Component {
     super(props);
     this.state = {
       view: "description",
-      hotel: {},
-      list: []
+      hotel: {}
     };
+    this.getData = this.getData.bind(this);
+  }
+
+  componentDidMount() {
+    this.getData();
+  }
+
+  getData() {
+    axios.get("/api/hotels/venetian").then(result => {
+      this.setState({
+        hotel: result.data
+      });
+    });
   }
 
   render() {
-    <div className="app" />;
+    return (
+      <div className="app">
+        <span>SEE ALL LAS VEGAS HOTELS</span>
+        <div className="appWrapper">
+          <div className="leftCol">
+            <img
+              src={
+                this.state.hotel.media ? this.state.hotel.media[0].href : null
+              }
+            />
+          </div>
+          <div className="rightCol">
+            <Header hotel={this.state.hotel} />
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 
