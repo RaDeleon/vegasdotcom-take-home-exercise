@@ -3,11 +3,10 @@ import axios from "axios";
 
 // => Components <=
 import Header from "./Header";
-import HotelDescription from "./HotelDescription";
+import Description from "./Description";
 import Details from "./Details";
-import Location from "./HotelLocation";
+import Location from "./Location";
 import HotelList from "./HotelList";
-import HotelLocation from "./HotelLocation";
 
 // => Stylesheet imports <=
 import "../css/App.css";
@@ -56,7 +55,7 @@ class App extends React.Component {
           <div className="rightCol">
             <Header onTabClick={this.onTabClick} hotel={this.state.hotel} />
             {this.state.view === "description"
-              ? <HotelDescription description={this.state.hotel.description} />
+              ? <Description description={this.state.hotel.description} />
               : this.state.view === "details"
                 ? <Details details={this.state.hotel.details} />
                 : <Location
