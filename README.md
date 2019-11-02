@@ -14,7 +14,7 @@ _It will install the dependencies needed_
 
 ### `yarn start`
 
-**It will run react-server and node simple server at the same time in termianl and will open site in browser.**
+**It will run react-server and node simple server at the same time in terminal and will open site in browser.**
 
 #### Frontend
 

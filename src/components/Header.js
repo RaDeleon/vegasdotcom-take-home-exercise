@@ -28,9 +28,15 @@ const Header = props =>
       </div>
     </div>
     <div className="tabs">
-      <div>DESCRIPTION</div>
-      <div>DETAILS</div>
-      <div>LOCATION</div>
+      <div onClick={props.onTabClick} className="description">
+        DESCRIPTION
+      </div>
+      <div onClick={props.onTabClick} className="details">
+        DETAILS
+      </div>
+      <div onClick={props.onTabClick} className="location">
+        LOCATION
+      </div>
     </div>
   </div>;
 

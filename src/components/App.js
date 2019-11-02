@@ -20,6 +20,7 @@ class App extends React.Component {
       hotel: {}
     };
     this.getData = this.getData.bind(this);
+    this.onTabClick = this.onTabClick.bind(this);
   }
 
   componentDidMount() {
@@ -31,6 +32,12 @@ class App extends React.Component {
       this.setState({
         hotel: result.data
       });
+    });
+  }
+
+  onTabClick(e) {
+    this.setState({
+      view: e.target.className
     });
   }
 
@@ -47,7 +54,12 @@ class App extends React.Component {
             />
           </div>
           <div className="rightCol">
-            <Header hotel={this.state.hotel} />
+            <Header onTabClick={this.onTabClick} hotel={this.state.hotel} />
+            {this.state.view === "description"
+              ? <HotelDescription description={this.state.hotel.description} />
+              : this.state.view === "details"
+                ? <Details details={this.state.hotel.details} />
+                : <HotelLocation />}
           </div>
         </div>
       </div>
