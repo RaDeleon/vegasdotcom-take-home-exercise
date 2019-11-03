@@ -1,0 +1,26 @@
+.detailText {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.detailsClass {
+  width: 654px;
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+.more,
+.fewer {
+  color: #895e95;
+  cursor: pointer;
+}
+
+.more:hover,
+.fewer:hover {
+  text-decoration-line: underline;
+}
+
+.label {
+  font-weight: 700;
+}

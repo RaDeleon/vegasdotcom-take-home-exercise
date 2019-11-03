@@ -1,0 +1,16 @@
+.locationClass {
+  display: flex;
+  flex-direction: column;
+  width: 654px;
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+.map {
+  width: 654px;
+  height: 604px;
+}
+
+.locationSpan {
+  margin-left: 5px;
+}

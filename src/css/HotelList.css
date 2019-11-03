@@ -1,0 +1,19 @@
+.hotelList {
+  padding: 15px;
+  width: 218px;
+  background-color: #efefee;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: space-between;
+}
+
+.hotelListEntry {
+  color: #6b6c7a;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotelName {
+  color: #895e95;
+}

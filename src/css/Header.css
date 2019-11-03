@@ -1,0 +1,94 @@
+h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.header {
+  height: 173px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerSpan {
+  margin-left: 5px;
+}
+
+.headerWrapping {
+  width: 55%;
+  color: #6b6c7a;
+}
+
+.headerWrapping0 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerWrapping1 {
+  display: flex;
+  align-items: center;
+}
+
+.headerWrapping2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  margin-left: 10px;
+  color: #aeaaae;
+}
+
+.priceWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description,
+.details,
+.location {
+  width: 33.33%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #895e95;
+  border-bottom: 3px solid #895e95;
+  color: #ffffff87;
+  cursor: pointer;
+}
+
+.description:hover,
+.details:hover,
+.location:hover {
+  color: white;
+  border-bottom: 3px solid #e5c5eb;
+}
+
+.focus {
+  color: white;
+  border-bottom: 3px solid #733080;
+}
+
+.focus:hover {
+  border-bottom: 3px solid #733080;
+}
+
+.price {
+  color: #f48721;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.strip {
+  cursor: pointer;
+}

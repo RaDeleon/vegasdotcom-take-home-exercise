@@ -1,0 +1,20 @@
+.collapse {
+  height: 200px;
+  overflow: hidden;
+}
+
+.descriptionClass {
+  width: 654px;
+  margin: auto;
+}
+
+.hide,
+.show {
+  color: #895e95;
+  cursor: pointer;
+}
+
+.hide:hover,
+.show:hover {
+  text-decoration-line: underline;
+}
