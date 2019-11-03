@@ -1,6 +1,6 @@
 # Angelo Deleon 10/29/19
 
-# Vegas.com Take Home Project: The Venetian
+## Vegas.com Take Home Project: The Venetian
 
 ## Install:
 
@@ -14,11 +14,13 @@ _It will install the dependencies needed_
 
 ### `yarn start`
 
-**It will run react-server and node simple server at the same time in terminal and will open site in browser.**
+---
 
-#### Frontend
+## Launch App:
 
-- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Open App
+
+- Open [http://localhost:8888](http://localhost:8888) to view it in the browser.
 
 #### Backend / API
 
